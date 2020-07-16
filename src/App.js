@@ -1,25 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { hot } from 'react-hot-loader/root'
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [myValue, setMyvalue] = useState(0)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          i love hot reload as its really fast......
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lucky link here and whats nowww....and whats noww?
-        </a>
-      </header>
+      Waht do you say noww?
+      <div onClick={() => {
+        setMyvalue(myValue+1)
+      }} style={{ color: "blue" }}>This is redd!!   and ..!!.</div> {myValue}
+
     </div>
   );
 }
