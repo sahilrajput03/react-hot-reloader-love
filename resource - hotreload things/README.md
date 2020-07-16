@@ -14,7 +14,7 @@ Simple approach is to add below line to node_modules/react-scripts/config/webpac
 ```
 in the alias object.
 
-So, finally it alias object would look like this:
+So, finally the alias object would look like this:
 
 ![image-20200716143706624](https://sahilrajput03.github.io/more/.imgs_typora/image-20200716143706624.png)
 
