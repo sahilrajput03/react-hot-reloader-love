@@ -23,4 +23,4 @@ So, finally the alias object would look like this:
 ### Solution 2:
 
  Make explicit overrides.js file for webpack without altering react-scripts config file directly.
-For this you may look into "other simplistics" folder.x
+For this you may look into "other simplistics" folder.
