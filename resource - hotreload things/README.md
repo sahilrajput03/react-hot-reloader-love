@@ -1,27 +1,26 @@
-Anyhing in this folder is for:
-/*Supressing warning in chrome developers too i.e. {{ React-Hot-Loader:  react-dom patch is not detected. React 16.6+ features may not work.}}  with hot-reloader. */
+## Anyhing in this folder is to supress the warning in chrome developers that says-
 
-Simple approach is to add below line to node_modules/react-scripts/config/webpack.config.js file:
+`React-Hot-Loader:  react-dom patch is not detected. React 16.6+ features may not work.}}  with hot-reloader.`
+
+***
+
+### Solution 1 (Recommended):
+
+Simple approach is to add below line to node_modules/react-scripts/config/webpack.config.js file **as a property**:
+
 ```js
-        ...(isEnvDevelopment && { 'react-dom': '@hot-loader/react-dom' }),
-        /*Aabove line supresses warning {{ React-Hot-Loader:  react-dom patch is not detected. React 16.6+ features may not work.}}  with hot-reloader. */
+ ...(isEnvDevelopment && { 'react-dom': '@hot-loader/react-dom' }),
+/*Aabove line supresses warning {{ React-Hot-Loader:  react-dom patch is not detected. React 16.6+ features may not work.}}  with hot-reloader. */
 ```
 in the alias object.
 
 So, finally it alias object would look like this:
-```js
-{
-        ...(isEnvDevelopment && { 'react-dom': '@hot-loader/react-dom' }),
-        /*Aabove line supresses warning {{ React-Hot-Loader:  react-dom patch is not detected. React 16.6+ features may not work.}}  with hot-reloader. */
 
-        // Support React Native Web
-        // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
-        'react-native': 'react-native-web',
-        // Allows for better profiling with ReactDevTools
-        ...(isEnvProductionProfile && {
-          'react-dom$': 'react-dom/profiling',
-          'scheduler/tracing': 'scheduler/tracing-profiling',
-        }),
-        ...(modules.webpackAliases || {}),
-      }
-```
+![image-20200716143706624](https://sahilrajput03.github.io/more/.imgs_typora/image-20200716143706624.png)
+
+***
+
+### Solution 2:
+
+ Make explicit overrides.js file for webpack without altering react-scripts config file directly.
+For this you may look into "other simplistics" folder.x

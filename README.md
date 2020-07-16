@@ -1,2 +1,3 @@
 ## This project is capable to refresh components without a refresh. Yikes!!
-Also, see the folder "resource - hotreload things"
+
+*Also, read the readme.md in "resource - hotreload things" folder.
