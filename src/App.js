@@ -17,7 +17,6 @@ function App() {
   );
 }
 
-
 // export default App; // Old stle of reloading with react.
 export default process.env.NODE_ENV === "development" ? hot(App) : App
 // New style of reloading with no refresh instant update capability.
