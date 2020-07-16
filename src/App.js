@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       Waht do you say noww?
       <div onClick={() => {
-        setMyvalue(myValue+1)
-      }} style={{ color: "blue" }}>This is redd!!   and ..!!.</div> {myValue}
+        setMyvalue(myValue + 2)
+      }} style={{ color: "blue" }}>This is redd!!   and ..!!.</div> {myValue * myValue}
 
     </div>
   );
