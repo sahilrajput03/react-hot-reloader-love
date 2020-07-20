@@ -3,25 +3,29 @@ import { hot } from 'react-hot-loader/root'
 // import logo from './logo.svg';
 import './App.css';
 
-console.log('amaing things!!!')
+console.log('amsss sfsfsasdfasdfaing things!!!')
 
-const ss = 10
 function App() {
   let [myValue, setMyvalue] = useState(400)
-  let some = 100;
-  // let more = 20;
-  useEffect(() => {
+  let some = 60+10;
+    useEffect(() => {
     // alert("Amazing tually or so??..")
   }, [])
 
   console.log('Is it goodD?...')
   return (
     <div className="App">
-      what are you upto nowwww/?
+      What do you think abou tlife this time??<br></br>
+      <b>hot</b>
       <div onClick={() => {
-        setMyvalue(myValue + 4 + some)
-      }} style={{ color: "blue" }}>This is redd!!   and ..!!.</div> {myValue+6}
-
+        setMyvalue(myValue + 29 + some)
+      }} style={{ color: "blue" }}>This is redd!!   and ..!!.</div>
+        <h2>
+        {myValue+162}
+        </h2>
+        <h1>
+          {some}
+        </h1>
     </div>
   );
 }
