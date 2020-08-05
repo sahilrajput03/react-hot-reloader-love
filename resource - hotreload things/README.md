@@ -6,11 +6,11 @@
 
 ### Solution 1 (Recommended):
 
-Simple approach is to add below line to node_modules/react-scripts/config/webpack.config.js file **as a property**:
+Simple approach is to add below line to node_modules/react-scripts/config/webpack.config.js file **as a property** alias object[search for this in the file]:
 
 ```js
  ...(isEnvDevelopment && { 'react-dom': '@hot-loader/react-dom' }),
-/*Aabove line supresses warning {{ React-Hot-Loader:  react-dom patch is not detected. React 16.6+ features may not work.}}  with hot-reloader. */
+/*Above line supresses warning {{ React-Hot-Loader:  react-dom patch is not detected. React 16.6+ features may not work.}}  with hot-reloader. */
 ```
 in the alias object.
 
