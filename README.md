@@ -2,4 +2,4 @@
 
 *Also, read the readme.md in "resource - hotreload things" folder.
 
-OKay, I'm updating new things to readme file from local repo from sahil pc.
+Okay, I'm good though.~sahil
